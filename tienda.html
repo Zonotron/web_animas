@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta http-equiv= "X-UA-Compatible" content="ie=edge">
-  <meta name= "description" content="Página para escoger que tipo de animal adoptar de la asociación Animas">
-  <meta name= "keywords" content="Adopta, animales, refugio,alicante, gatos, perros">
+  <meta name= "description" content="Tienda online de la asosciación Animas">
+  <meta name= "keywords" content="Tienda, online, animales, refugio,alicante, gatos, perros">
 
-  <title>Adopta</title>
+  <title>Tienda</title>
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="icon" type="image/png" href="images/logo_reducido.png">
 
@@ -16,35 +16,123 @@
 
 <body>
 
-  <header>
+    <header >
 
-    <nav class="navbar">
-      <div class="nav_container">
-       <div id="logo">
-        <img src="images/logo.png" alt="Logo de la asociación ANIMAS" />  
-       </div>
-
-       <label for="drop" class="toggle">Menu</label>
-       <input type="checkbox" id="drop" />
-           <ul class="menu">
-             <li><a href="index.html" title="Inicio">Inicio</a></li>
-             <li><a href="adopta.html" title="Adopta">Adopta</a></li>
-             <li><a href="quienes_somos.html" title="¿ Quiénes somos ?">¿ Quiénes somos ?</a></li>
-             <li><a href="#" title="Conoce el refugio">Conoce el refugio</a></li>
-             <li><a href="tienda.html" title="Tienda">Tienda</a></li>
-             <li><a href="#" title="Contacta">Contacta</a></li>
-             <li><a href="#" title="Sobre adopción">Sobre adopción</a></li>
-           </ul>
-      </div>
-    </nav>
-
-    <div class="espacio_header_interior">
-    </div>
- 
-  </header>
+        <nav class="navbar">
+          <div class="nav_container">
+           <div id="logo">
+            <img src="images/logo.png" alt="Logo de la asociación ANIMAS" />  
+           </div>
+    
+           <label for="drop" class="toggle">Menu</label>
+           <input type="checkbox" id="drop" />
+               <ul class="menu">
+                <li><a href="index.html" title="Inicio">Inicio</a></li>
+                <li><a href="adopta.html" title="Adopta">Adopta</a></li>
+                <li><a href="quienes_somos.html" title="¿ Quienes somos ?">¿ Quienes somos ?</a></li>
+                <li><a href="#" title="Conoce el refugio">Conoce el refugio</a></li>
+                <li><a href="tienda.html" title="Tienda">Tienda</a></li>
+                <li><a href="#" title="Contacta">Contacta</a></li>
+                <li><a href="#" title="Sobre adopción">Sobre adopción</a></li>
+               </ul>
+          </div>
+        </nav>
+    
+        <div class="espacio_header_interior">
+        </div>
+        
+        <div>
+          <ul class="redes_sociales">
+            <li><a title="Siguenos en nuestro facebook" href="#" ><i class="FB"></i></a></li> 
+            <li><a title="Siguenos en nuestro Google+" href="#" ><i class="GP"></i></a></li>
+            <li><a title="Siguenos en nuestro Twitter" href="#" ><i class="TT"></i></a></li>
+            <li><a title="Mandanos un correo electronico" href="#" ><i class="e-Mail"></i></a></li>
+          </ul>
+        </div>
+    
+      </header>
 
 
   <main id="container">
+    
+    <section id="tienda">
+      <h1> TIENDA </h1>
+     <table>
+        <caption><h3>Catálogo</h3></caption>
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Foto de producto</th>
+              <th scope="col">Detalles</th>
+              <th scope="col">Precio</th>
+              <th scope="col">&nbsp;</th>
+             
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+              <td data-label="Producto">Camiseta unisex</td>
+              <td data-label="Foto producto" class="imagen_tabla"><img src="images/camiseta.jpg" alt="Camiseta Hombre" class="fotos_productos"/></td>
+              <td data-label="Detalles">100% algodon</td>
+              <td data-label="Precio" class ="precio">10€</td>
+              <td data-label="Comprar" class="boton_compra" > <input type="button" class="boton_tabla_comprar" value=" Comprar "/></td>
+              
+            </tr>
+            <tr>
+              
+             <td data-label="Producto">2 x Llaveros</td>
+             <td data-label="Foto producto" class="imagen_tabla"><img src="images/llaveros.jpg" alt="Camiseta Hombre" class="fotos_productos"/></td>
+             <td data-label="Detalles">Acero y resina</td>
+             <td data-label="Precio" class ="precio">3€</td>
+             <td data-label="Comprar" class="boton_compra"> <input type="button" class="boton_tabla_comprar" value=" Comprar "/></td>
+            
+            </tr>
+
+            <tr>
+      
+              <td data-label="Producto">Correa</td>
+              <td data-label="Foto producto" class="imagen_tabla"><img src="images/correa.jpg" alt="Camiseta Hombre" class="fotos_productos"/></td>
+              <td data-label="Detalles">Ultra resistente </td>
+              <td data-label="Precio" class ="precio">3€</td>
+              <td data-label="Comprar" class="boton_compra"> <input type="button" class="boton_tabla_comprar" value=" Comprar "/></td>
+            </tr>
+
+            <tr>
+              
+              <td data-label="Producto">Collar</td>
+              <td data-label="Foto producto" class="imagen_tabla"><img src="images/collar.jpg" alt="Camiseta Hombre" class="fotos_productos"/></td>
+              <td data-label="Detalles">Cuero sintetico y acero </td>
+              <td data-label="Precio" class ="precio">3€</td>
+              <td data-label="Comprar" class="boton_compra"> <input type="button" class="boton_tabla_comprar" value=" Comprar "/></td>
+            
+            </tr>
+
+            <tr>
+              
+              <td data-label="Producto">Gorra</td>
+              <td data-label="Foto producto" class="imagen_tabla"><img src="images/gorra.jpg" alt="Camiseta Hombre" class="fotos_productos"/></td>
+              <td data-label="Detalles">De algodón 100% </td>
+              <td data-label="Precio" class ="precio">5€</td>
+              <td data-label="Comprar" class="boton_compra"> <input type="button" class="boton_tabla_comprar" value=" Comprar "/></td>
+            
+            </tr>
+
+            <tr>
+              
+              <td data-label="Producto">Dispenser comida seca</td>
+              <td data-label="Foto producto" class="imagen_tabla"><img src="images/dispenser.jpg" alt="Camiseta Hombre" class="fotos_productos"/></td>
+              <td data-label="Detalles"> PVC reciclado 100%</td>
+              <td data-label="Precio" class ="precio">15€</td>
+              <td data-label="Comprar" class="boton_compra"> <input type="button" class="boton_tabla_comprar" value=" Comprar "/></td>
+            
+            </tr>
+          
+          </tbody>
+      </table>
+    </section>
+
 
     <div>
       <ul class="redes_sociales">
@@ -54,61 +142,6 @@
         <li><a title="Mandanos un correo electronico" href="#" ><i class="e-Mail"></i></a></li>
       </ul>
     </div>
-    <h1>ADOPTA</h1> 
-    <section >
-      <div>
-       <div class="cuadros">
-          <div class="cuadro">
-              <img src="images/adopta_gatos.jpg" alt="Imagen con cachorros para adoptar" class="imagen_cuadrados"/>
-              <h3>GATOS</h3>
-              <input type="button" class="boton_cuadro" value=" "/>
-          </div>
-          <div class="cuadro">
-              <img src="images/adopta_perros.jpg" alt="Imagen de un gato mirando un telefono" class="imagen_cuadrados" />
-              <h3>PERROS</h3>
-              <input type="button" class="boton_cuadro" value=" "/>
-          </div>
-          <div class="cuadro">
-              <img src="images/adopta_animales_pequenos.jpg" alt="Imagen de un perro con bolsas de la compra" class="imagen_cuadrados" />
-              <h3>PEQUEÑOS ANIMALES</h3>
-              <input type="button" class="boton_cuadro" value=" "/>
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>¿NECESITAS AYUDA?</h2>
-      <div>
-      <div class="cuadros">
-          <div class="cuadro">
-              <img src="images/sobre_adopcion.jpg" alt="Imagen de familia adoptando un gato" class="imagen_cuadrados"/>
-              <h3>SOBRE ADOPCIÓN</h3>
-              <input type="button" class="boton_cuadro" value=" "/>
-          </div>
-          <div class="cuadro">
-              <img src="images/quienes_somos.jpg" alt="Imagen de vouluntarios con perros en el jardin de la asociación" class="imagen_cuadrados" />
-              <h3>¿ QUIENES SOMOS ?</h3>
-              <input type="button" class="boton_cuadro" value=" "/>
-          </div>
-          <div class="cuadro">
-              <img src="images/conoce_refugio.jpg" alt="Imagen de un pastor aleman sentado en su casa" class="imagen_cuadrados" />
-              <h3>CONOCE EL REFUGIO</h3>
-              <input type="button" class="boton_cuadro" value=" "/>
-          </div>  
-        </div>
-      </div>
-    </section>
-
-    <div>
-      <ul class="redes_sociales">
-        <li><a title="Siguenos en nuestro facebook" href="#" ><i class="FB"></i></a></li> 
-        <li><a title="Siguenos en nuestro Google+" href="#" ><i class="GP"></i></a></li>
-        <li><a title="Siguenos en nuestro Twitter" href="#" ><i class="TT"></i></a></li>
-        <li><a title="Mandanos un correo electronico" href="#" ><i class="e-Mail"></i></a></li>
-      </ul>
-    </div>
-
   </main>
 
 
