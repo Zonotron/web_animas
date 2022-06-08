@@ -1,0 +1,630 @@
+/*Mario Rodes Ruiz - Hoja de estilos CSS para la página del refugio alicantino ANIMAS*/
+
+/* TIPOGRAFIAS DE GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@800&family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+ 
+/* COLORES */
+:root {
+  --white: #ffffff;
+  --yellow: #FFB81F;
+  --light_blue: #ccd8ff;
+  --blue: #0036E6;
+  --dark_blue:#0B083A;
+  --red: #FF0000;
+  --text: #000000;
+ 
+}
+
+/* ESTILOS DE ENCABEZADOS, TEXTOS Y ENLACES DE TEXTO */
+h1{
+  font-family:'sniglet','Roboto', sans-serif;
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--yellow);
+  text-shadow:  rgb(60, 60, 60) 3px 3px 3px; 
+}
+
+h2{
+
+  font-family:'sniglet','Roboto', sans-serif;
+  font-size: 34px;
+  line-height: 1.5;
+  color: var(--yellow);
+  margin: 50px;
+}
+
+h3{
+  font-family:'sniglet','Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--blue);
+
+}
+
+body{
+  font-family: 'Titillium Web','Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+  text-align: center;
+}
+
+body p{ 
+  text-align: justify;
+}
+
+a {
+    color: var(--blue);
+    font-weight: 800;
+}
+
+a:hover {
+	color:var(--yellow);
+}
+
+/* ESTILOS DE CABECERA*/
+
+.banner_index {
+    width: 100%;
+    height: auto;
+    padding: 500px 0 400px 0;
+    text-align: center;
+    color: var(--yellow);
+    background: url(../images/index_portada.jpeg) no-repeat center fixed;
+    background-size: cover; 
+}
+
+.banner_quienes_somos {
+  width: 100%;
+  height: auto;
+  padding: 500px 0 400px 0;
+  text-align: center;
+  color: var(--yellow);
+  background: url(../images/portada_quienes_somos.jpeg) no-repeat center fixed;
+  background-size: cover;
+}
+
+.espacio_banner_inicial {
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'sniglet','Roboto', sans-serif;
+}
+
+.dos_columnas {
+  column-count: 2;
+  column-gap:10px;
+}
+
+.columna_izq {
+
+  margin-top: -0px;
+}
+
+.espacio_header_interior {
+
+    padding: 30px 0 40px 0;
+  
+}
+
+.navbar {
+    font-family: 'Sniglet','Roboto', sans-serif;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+}
+
+nav {
+	margin:0;
+	background-color: var(--white);
+  color: var(--dark_blue);
+  position: relative;
+}
+
+.nav_container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+#logo {
+	display: block;
+	float: left;
+  max-height: 100px;
+}
+ 
+#logo img {
+  width: 200px;
+
+}
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+
+nav ul li {
+	margin: 15px 0 0 0 ;
+	display:inline-block;
+	
+	}
+
+nav a {
+	display:block;
+	padding: 15px 15px;
+	color:var(--dark_blue);
+	font-size:17px;
+	text-decoration:none;
+}
+
+nav a:hover {
+  color:var(--blue);
+	background-color:var(--yellow);
+  padding-bottom: 15px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+/* Sprite redes sociales*/
+ul.redes_sociales {
+  list-style: none;
+	padding:0;
+	margin: 0;
+	}
+ul.redes_sociales li {
+  margin: 30px 5px 30px 5px;
+	display:inline-block;
+	}
+i{
+  background-image:url(../images/social_media_icons.png);
+  transition:all 0.3s;
+  display:inline-block;
+  border-radius: 50%;
+  width:33px;
+  height:33px; 
+}
+
+i:hover{background-position-y: -82px;}
+.e-Mail{background-position: -7px -7px;}
+.GP{background-position: -122px -7px;}
+.FB{background-position: -179px -7px;}
+.TT{background-position: -293px -7px;}
+
+#container{
+  max-width: 1200px;
+  margin: auto;
+  }
+
+/*Secciones de cuadros */
+.cuadros {
+  column-width: 320px ;
+  column-gap: 20px;
+  column-fill: balance; 
+}
+
+.cuadros p {
+  text-align: center;
+}
+
+.cuadro {
+   text-align: center;
+   border-radius: 48px;
+   background-color: var(--light_blue);
+   text-align: center;
+   margin: 0 5px 10px;
+   padding: 20px;
+   float: left;
+   overflow:hidden;
+   
+}
+
+.cuadro img {
+  width: 100%;
+}
+
+.cuadro a{
+  text-align: center;
+}
+
+.cuadro:hover .imagen_cuadrados {
+  transform:scale(1.2);
+}
+
+.imagen_cuadrados {
+  transition:all .3s ease-in-out;
+  border-radius: 10%;
+  width: 100%;
+}
+
+/*Botones*/
+.boton_cuadro {
+
+  background-color: var(--blue);
+  background-image:url(../images/ojovermas.png);
+  background-repeat:no-repeat;
+  height:60px;
+  width:150px;
+  border-radius: 20px;
+  border: 0px;
+  background-size: 50px 50px;
+  background-position:center;
+  margin-bottom: 30px;
+
+}
+
+.boton_cuadro:hover {
+  background-color: var(--dark_blue);
+  background-image:url(../images/ojovermas.png);
+  background-repeat:no-repeat;
+  height:60px;
+  width:150px;
+  border-radius: 20px;
+  border: 0px;
+  background-size: 50px 50px;
+  background-position:center;
+}
+
+.boton_tabla_comprar {
+
+  color: var(--yellow);
+  font-family:'sniglet','Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: var(--blue);
+  background-repeat:no-repeat;
+  height:60px;
+  width:150px;
+  border-radius: 20px;
+  border: 0px;
+  background-size: 50px 50px;
+  background-position:center;
+
+  
+}
+
+.boton_tabla_comprar:hover {
+
+  background-color: var(--dark_blue);
+  background-repeat:no-repeat;
+  height:60px;
+  width:150px;
+  border-radius: 20px;
+  border: 0px;
+  background-size: 50px 50px;
+  background-position:center;
+  
+}
+
+.boton_cuadro_mail {
+  margin: 50px 20px;
+  background-color: var(--blue);
+  background-image:url(../images/correo.png);
+  background-repeat:no-repeat;
+  height:60px;
+  width:150px;
+  border-radius: 20px;
+  border: 0px;
+  background-size: 50px 50px;
+  background-position:center;
+  margin-bottom: 30px;
+ 
+}
+
+.boton_cuadro_mail:hover {
+
+  margin: 50px 20px;
+  background-color: var(--dark_blue);
+  background-image:url(../images/correo.png);
+  background-repeat:no-repeat;
+  height:60px;
+  width:150px;
+  border-radius: 20px;
+  border: 0px;
+  background-size: 50px 50px;
+  background-position:center;
+}
+
+/* FOOTER *********************************************************************************************************************/
+.cuadro_footer{
+  min-height: 550px;
+  text-align: center;
+  border-radius: 48px;
+  background-color: var(--white);
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  padding: 20px;
+  float: left;
+  overflow:hidden;
+  transition:all .1s ease-in-out;
+}
+
+.cuadro_footer img {
+  margin:auto;
+  width: 40%;
+}
+
+.cuadros_footer {
+  column-width: 320px ;
+  padding-bottom: 20px;
+  column-gap: 20px;
+  column-fill: balance;
+  
+}
+
+.cuadros_footer p {
+  text-align: justify;
+}
+
+.mini_bloques_footer{
+float: left;
+width: 50%;
+}
+
+.mini_bloques_footer img{
+  width: 100%;
+}
+
+footer{
+  min-height: 100px;
+	background-color: var(--blue);
+  color: #000000;
+  padding-top: 50px;
+  padding-bottom: 50px
+}
+
+.footer_container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer a{
+  color: #000000;
+}
+
+#firma {
+  text-align: center;
+  color:var(--white);
+}
+
+.mapa_web {
+    margin: auto;
+    max-width: 350px;
+    text-align: center;
+    
+}
+.mapa_web ul{
+  list-style: none;
+  text-decoration:none;
+  font-family: 'Sniglet','Roboto', sans-serif;
+  
+}
+
+.mapa_web a{
+  text-decoration:none;
+}
+
+.mapa_web a:hover{
+  color: var(--blue)
+}
+
+.columnafooter_estilo1{
+  text-align: left;
+}
+
+.columnafooter_estilo2{
+  text-align: left;
+  padding-left: 10%;
+}
+
+.columnafooter_estilo2 a{
+  font-family: 'Sniglet','Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.mostrador_footer{
+  text-align: justify;
+}
+
+
+
+
+/* TABLA DE LA TIENDA ***********************************************************************************************************/
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 100px;
+
+}
+
+table tr {
+    background: white;
+    border-bottom: 1px solid
+}
+
+table th {
+  background: var(--blue);
+   color: var(--yellow);
+  padding: 20px 30px;
+}
+
+table td { 
+  padding: 20px 30px;
+}
+
+.precio {
+  font-family: 'Sniglet','Roboto', sans-serif;
+  font-weight: 400 ;
+  font-size: 36px;
+  color: var(--red);
+
+}
+
+.fotos_productos {
+  max-height: 150px;
+}
+
+
+/* Diseño responsivo - Media Queries ************************************************************************************/
+@media screen and (max-width : 320px) {
+
+  /*Cabecera*/
+	#logo {
+		display: none;
+	}
+	nav {
+		margin: 0;
+	}
+  nav ul {
+  	float: left;
+  	padding-left: 20px;
+  	list-style: none;
+  }
+  .banner_index {
+      padding: 150px 0 150px 0;
+  } 
+  .banner_quienes_somos {
+
+    padding: 150px 0px 150px 0px;
+    
+  }
+
+  /*Estilos del texto*/
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p{
+    font-size: 12px;
+  }
+  .dos_columnas{
+    column-count: 1;
+    column-gap:0px;
+  }
+
+  /*Barra contenedora del navigador para android*/
+  .toggle + a,
+  .menu {
+    color: var(--white);
+		display: none;
+	}
+  [id^=drop]:checked + ul {
+		display: block;
+	}
+	.toggle {
+    background-image:url(../images/logo_reducido.png);
+    background-repeat:no-repeat;
+    background-position:left;
+    text-decoration:none;
+    border:none;
+		display: block;
+		background-color: var(--white);
+		padding:10px 60px;
+		color:var(--text);
+		font-size:17px;
+    font-weight: 800;
+    text-align: left;	
+	}
+	.toggle:hover {
+		background-color: var(--blue);
+    color: var(--yellow);
+	}
+
+  /*Enlaces de navegación*/
+	nav ul li {
+		display: block;
+		width: 100%;
+    margin: auto;
+    text-align: left;
+		display:block;
+		width: 100%;
+	}
+	nav a:hover {
+		background-color: var(--yellow);
+	}
+  nav ul {
+  
+    padding-bottom: 300px;
+ 
+	}
+  .intro {
+      height: auto;
+  }
+  #container{
+    padding: 0 20px;
+  }
+
+  /*Tabla para movil*/
+  table thead {
+       position: absolute;
+       visibility: hidden;
+  }
+  table tr {
+       
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-bottom: 50px;
+        
+  }
+  table td {
+      
+        border: 1px solid;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: 0 -1px -1px 0;
+        position: relative;
+        width: 90%;
+
+        text-align: center;
+
+  }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    background: var(--blue);
+    color: var(--yellow);
+    font-size: 10px;
+    font-weight: 400;
+    padding: 5px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+  }
+
+ /*Footer*/
+  .cuadro_footer{
+    min-height: auto;
+  } 
+  .cuadros_footer{
+    padding-left:15px ;
+    padding-right: 15px;
+  } 
+}
+
